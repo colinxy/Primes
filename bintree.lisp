@@ -70,7 +70,7 @@
   (if (null tree)
       nil
       (let* ((node-value (node-element tree))
-             (cmp        (-element node-value)))
+             (cmp        (test-node element tree)))
         (cond ((zerop cmp)  node-value)
               ((minusp cmp) (tree-search element (node-left tree)))
               (t            (tree-search element (node-right tree)))))))
