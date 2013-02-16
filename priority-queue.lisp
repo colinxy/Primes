@@ -3,8 +3,8 @@
 ;;;;
 
 (defpackage :priority-queue 
-  (usepackage :common-lisp)
-  (export #:insert
+  (:use :common-lisp)
+  (:export #:insert
           #:lookup-priority
           #:discard-priority
           #:remove-priority))
